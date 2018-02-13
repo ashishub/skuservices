@@ -53,11 +53,14 @@
     ]
   },
   "dependencies": {
-    "express": "4.16.2"
+    "express": "4.16.2",
+    "actions-on-google": "^1.5.x",
+    "apiai": "^4.0.3"
   },
   "devDependencies": {
     "@google-cloud/nodejs-repo-tools": "2.1.4",
     "ava": "0.24.0",
+    "nodemon": "^1.14.12",
     "supertest": "3.0.0"
   },
   "engines": {

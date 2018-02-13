@@ -17,10 +17,18 @@ const express = require('express');
 
 const app = express();
 
+const bodyParser = require('body-parser');
+
+app.use(bodyParser.urlencoded({ extended: true }));
+app.use(bodyParser.json());
+
+var routes = require('./api/routes/skuserviceRoutes'); //importing route
+routes(app); //register the route
+
 // [START hello_world]
 // Say hello!
 app.get('/', (req, res) => {
-  res.status(200).send('Hello, world!');
+  res.status(200).send('The requested page is not found!');
 });
 // [END hello_world]
 
